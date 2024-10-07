@@ -51,7 +51,7 @@ const GuestsAmount = () => {
             <div className={`bg-white flex-col border border-secondary px-10 py-7 border-t-0 ${isOpen ? 'block' : 'hidden'}`}>
                 {/* Adults */}
                 <div className="flex items-center justify-between py-2">
-                    <p>Adults</p>
+                    <p className='text-sm lg:text-base'>Adults</p>
                     <div className="flex items-center gap-4">
                         <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('adults', '-')}>-</button>
                         <span>{adults}</span>
@@ -61,7 +61,7 @@ const GuestsAmount = () => {
 
                 {/* Children */}
                 <div className="flex items-center justify-between py-2">
-                    <p>Children</p>
+                    <p className='text-sm lg:text-base'>Children</p>
                     <div className="flex items-center gap-4">
                         <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('children', '-')}>-</button>
                         <span>{children}</span>
@@ -71,7 +71,7 @@ const GuestsAmount = () => {
 
                 {/* Pets */}
                 <div className="flex items-center justify-between py-2">
-                    <p>Pets</p>
+                    <p className='text-sm lg:text-base'>Pets</p>
                     <div className="flex items-center gap-4">
                         <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('pets', '-')}>-</button>
                         <span>{pets}</span>
