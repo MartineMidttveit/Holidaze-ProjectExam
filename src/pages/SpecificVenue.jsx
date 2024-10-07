@@ -213,7 +213,7 @@ export default function SpecificVenue() {
                                     <p>5175 NOK</p>
                                 </div>
 
-                                <button className="bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded mt-6 lg:mt-8">BOOK NOW</button>
+                                <button className="bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded mt-6 lg:mt-8 hover:shadow-md">BOOK NOW</button>
                             </div>
                         </div>
                     </div>  
