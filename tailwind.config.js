@@ -11,7 +11,10 @@ export default {
       }, 
       height: {
         'screen-minus-10': 'calc(100vh - 10rem)',
-      }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
