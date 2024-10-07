@@ -200,7 +200,7 @@ export default function SpecificVenue() {
                             <div className="flex flex-col text-sm md:text-base">
                                 <div className="flex flex-col border-b border-secondary pt-6 lg:pt-10 pb-4 lg:pb-6 text-secondary">
                                     <div className="flex justify-between">
-                                        <p className="flex gap-4">1249 NOK <span>x</span> <span>4 nights</span></p>
+                                        <p className="flex gap-4 pb-2">1249 NOK <span>x</span> <span>4 nights</span></p>
                                         <p>4996 NOK</p>
                                     </div>
                                     <div className="flex justify-between">
