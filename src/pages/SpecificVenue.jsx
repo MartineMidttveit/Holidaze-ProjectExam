@@ -12,12 +12,14 @@ import ShareIcon from '../components/SVG/ShareIcon';
 import RatingIcon from '../components/SVG/RatingIcon';
 import CheckIcon from '../components/SVG/CheckIcon';
 import ReportIcon from '../components/SVG/ReportIcon';
+import CloseIcon from '../components/SVG/CloseIcon';
+import DeleteIconBig from '../components/SVG/DeleteIconBig';
 
 import GuestsAmount from '../components/dropdowns/GuestAmount';
 
 export default function SpecificVenue() {
     return(
-        <main className="bg-background text-primary font-poppins">
+        <main className="bg-background text-primary font-poppins relative">
                 <div className="relative px-[5%] xl:px-[10%]">
                 <img src="lofoten.png" alt="" className="w-full h-96 lg:h-screen-minus-20 object-cover rounded-3xl" />
                     
@@ -222,6 +224,29 @@ export default function SpecificVenue() {
                         <p className="text-center pb-1 text-secondary text-sm 2xl:text-base">Pressing the button will take you to the payment page.</p>
                         <p className="text-center text-secondary text-sm 2xl:text-base">For more information regarding booking, read our <span className="underline">terms and conditions.</span></p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+{/* DELETE VENUE */}
+{/* SET IT TO FLEX WHEN CLICKING ON THE DELETE-BUTTON.  */}
+        <div className='absolute inset-0 bg-black bg-opacity-40 items-center justify-center h-screen text-center hidden'>
+            <div className='bg-white rounded px-4 md:p-16 flex items-center justify-center flex-col relative h-screen w-full md:h-fit md:w-fit'>
+                <button className='absolute top-6 right-6'>
+                    <CloseIcon/>
+                </button>
+
+                <div className='h-20 w-20 lg:h-24 lg:w-24 bg-customLightBlue flex items-center justify-center rounded-full mb-4 lg:mb-6'>
+                    <DeleteIconBig/>
+                </div>
+
+                <h2 className='md:text-lg lg:text-xl font-bold'>You are about to delete your venue</h2>
+                <p className='pt-4 lg:pt-5 text-sm md:text-base'>This is a destructive action, and it's not possible to undo it.</p>
+                <p className='pb-4 lg:pb-6 text-sm md:text-base'>Are you sure that you want to proceed?</p>
+
+                <div className='flex gap-3 items-center'>
+                    <button className='border border-primary h-12 2xl:h-14 py-4 font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base hover:bg-customLightBlue hover:border-customLightBlue duration-300'>Cancel</button>
+                    <button className='bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base'>Delete</button>
                 </div>
             </div>
         </div>
