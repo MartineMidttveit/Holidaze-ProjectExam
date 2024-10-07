@@ -18,8 +18,8 @@ import GuestsAmount from '../components/dropdowns/GuestAmount';
 export default function SpecificVenue() {
     return(
         <main className="bg-background text-primary font-poppins">
-                <div className="relative px-[5%]">
-                <img src="lofoten.png" alt="" className="w-full h-96 lg:h-screen-minus-10 object-cover rounded-3xl" />
+                <div className="relative px-[5%] xl:px-[10%]">
+                <img src="lofoten.png" alt="" className="w-full h-96 lg:h-screen-minus-20 object-cover rounded-3xl" />
                     
                     <button className="absolute top-[5%] right-[9%] 2xl:right-[10%] 2xl:top-[10%] bg-white text-sm xl:text-base h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex">
                         <HeartIcon/>

@@ -11,7 +11,7 @@ export default {
         customOrange: '#FF8E2B'
       }, 
       height: {
-        'screen-minus-10': 'calc(100vh - 10rem)',
+        'screen-minus-20': 'calc(100vh - 20rem)',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
