@@ -20,8 +20,7 @@ import GuestsAmount from '../components/dropdowns/GuestAmount';
 export default function SpecificVenue() {
     return(
         <main className="bg-background text-primary font-poppins relative">
-                <div className="relative mx-[5%] xl:mx-[10%] bg-white flex items-center justify-center flex-col">
-
+                <div className="relative bg-white flex items-center justify-center flex-col">
                     <div className='flex items-center'>
                         <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center">
                             <ChevronLeft/>
@@ -33,7 +32,6 @@ export default function SpecificVenue() {
                             <ChevronRight/>
                         </button>
                     </div>
-                
                     
                     <button className="absolute top-[5%] right-[9%] 2xl:right-[10%] 2xl:top-[10%] bg-background text-sm xl:text-base h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex">
                         <HeartIcon/>
