@@ -14,6 +14,8 @@ import RatingIcon from '../components/SVG/RatingIcon';
 import CheckIcon from '../components/SVG/CheckIcon';
 import ReportIcon from '../components/SVG/ReportIcon';
 
+import GuestsAmount from '../components/dropdowns/GuestAmount';
+
 export default function SpecificVenue() {
     return(
         <main className="bg-background text-primary font-poppins">
@@ -192,52 +194,7 @@ export default function SpecificVenue() {
                                 </div>                            
                             </form>
 
-                            {/* Guests  */}
-                            <div className="pt-3 lg:pt-5">       
-                                <p className="pb-2 lg:pb-3 font-medium md:font-normal text-sm md:text-base">Guests:</p>
-                                <div className="border border-secondary rounded bg-white py-3 h-12 xl:h-14 max-h-14 flex items-center justify-between px-4">
-                                    <p className="font-medium text-sm md:text-base">3 guests <span className="font-normal text-secondary">(2 adults, 1 child)</span></p>
-                                    <ChevronDown/>
-                                </div>
-
-                            {/* DROPDOWN FOR SELECTING AMOUNT OF GUESTS
-                            CURRENTLY SET TO HIDDEN
-                            When clicking outside of this container, it disappears    */}
-                                <div className="bg-white flex-col border border-secondary px-10 py-7 border-t-0 hidden">
-
-                                    {/* Adults */}
-                                    <div className="flex items-center justify-between py-2">
-                                        <p>Adults</p>
-                                        <div className="flex items-center gap-4">
-                                            <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center">-</button>
-                                            <span>0</span>
-                                            <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center">+</button>
-                                        </div>
-                                    </div>
-
-                                    {/* Children */}
-                                    <div className="flex items-center justify-between py-2">
-                                        <p>Children</p>
-                                        <div className="flex items-center gap-4">
-                                            <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center">-</button>
-                                            <span>0</span>
-                                            <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center">+</button>
-                                        </div>
-                                    </div>
-
-                                    {/* <!--Pets--> */}
-                                    <div className="flex items-center justify-between py-2">
-                                        <p>Pets</p>
-                                        <div className="flex items-center gap-4">
-                                            <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center">-</button>
-                                            <span>0</span>
-                                            <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center">+</button>
-                                        </div>
-                                    </div>
-
-                                    <button className="bg-contrast py-2 rounded mt-4 duration-300 h-12 text-white">Apply</button>
-                                </div>
-                            </div>
+                            <GuestsAmount/>
 
                             {/* <!--Prices-->  */}
                             <div className="flex flex-col text-sm md:text-base">

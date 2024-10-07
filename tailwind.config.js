@@ -7,7 +7,8 @@ export default {
         primary: '#1C1A1D',
         secondary: '#626262',
         background: '#F7F7F7',
-        contrast: '#1A73E8'
+        contrast: '#1A73E8',
+        customOrange: '#FF8E2B'
       }, 
       height: {
         'screen-minus-10': 'calc(100vh - 10rem)',
