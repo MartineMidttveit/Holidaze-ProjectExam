@@ -12,7 +12,7 @@ export default {
         customLightBlue: '#D4E5FB',
       }, 
       height: {
-        'screen-minus-20': 'calc(100vh - 20rem)',
+        'screen-minus-40': 'calc(100vh - 40rem)',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

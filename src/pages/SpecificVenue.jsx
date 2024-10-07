@@ -20,37 +20,38 @@ import GuestsAmount from '../components/dropdowns/GuestAmount';
 export default function SpecificVenue() {
     return(
         <main className="bg-background text-primary font-poppins relative">
-                <div className="relative px-[5%] xl:px-[10%]">
-                <img src="lofoten.png" alt="" className="w-full h-96 lg:h-screen-minus-20 object-cover rounded-3xl" />
+                <div className="relative mx-[5%] xl:mx-[10%] bg-white flex items-center justify-center flex-col">
+
+                    <div className='flex items-center'>
+                        <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center">
+                            <ChevronLeft/>
+                        </button>
+
+                        <img src="lofoten.png" alt="" className="h-96 lg:h-screen-minus-40 object-cover rounded-3xl m-10" />
+
+                        <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center">
+                            <ChevronRight/>
+                        </button>
+                    </div>
+                
                     
-                    <button className="absolute top-[5%] right-[9%] 2xl:right-[10%] 2xl:top-[10%] bg-white text-sm xl:text-base h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex">
+                    <button className="absolute top-[5%] right-[9%] 2xl:right-[10%] 2xl:top-[10%] bg-background text-sm xl:text-base h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex">
                         <HeartIcon/>
                         Add to favorites
                     </button>
 
                     <div className="hidden absolute right-[10%] top-[10%] gap-3">
-                        <button className="bg-white h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base">
+                        <button className="bg-background h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base">
                             <DeleteIcon/>
                             Delete venue
                         </button>
 
-                        <button className="bg-white h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base">
+                        <button className="bg-background h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base">
                             <EditIcon/>
                             Edit venue
                         </button>
                     </div>
                     
-                    <div className="absolute right-[10%] bottom-[10%] flex gap-3 xl:gap-6 2xl:gap-8 items-center">
-                        <button className="rounded-full bg-white h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center">
-                            <ChevronLeft/>
-                        </button>
-                            <img src="lofoten.png" alt="" className="h-20 2xl:h-56 aspect-square object-cover"/>
-                            <img src="lofoten.png" alt="" className="h-20 2xl:h-56  aspect-square object-cover"/>
-                            <img src="lofoten.png" alt="" className="h-20 2xl:h-56  aspect-square object-cover"/>
-                        <button className="rounded-full bg-white h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center">
-                            <ChevronRight/>
-                        </button>
-                    </div>
                 </div>
 
         {/* <!--INFO VENUE--> */}
