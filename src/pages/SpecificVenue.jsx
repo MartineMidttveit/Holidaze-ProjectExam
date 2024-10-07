@@ -49,7 +49,6 @@ export default function SpecificVenue() {
                             Edit venue
                         </button>
                     </div>
-                    
                 </div>
 
         {/* <!--INFO VENUE--> */}
@@ -249,6 +248,7 @@ export default function SpecificVenue() {
                 </div>
             </div>
         </div>
+
         </main>
     )
 }

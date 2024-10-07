@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -16,6 +16,12 @@ export default {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+      },
+      fontSize: {
+        '10xl': '8rem', 
+        '12xl': '10rem', 
+        '14xl': '12rem', 
+        '16xl': '14rem', 
       },
     },
   },
