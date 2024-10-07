@@ -102,25 +102,25 @@ export default function SpecificVenue() {
                         <div className="flex flex-col xl:border-b-0">
                             <h2 className="font-bold md:text-lg 2xl:text-xl pb-4">Facilities:</h2>
 
-                            <div className="flex flex-col gap-1">
+                            <div className="flex flex-col gap-1 text-sm md:text-base">
                                 <div className="flex items-center gap-3">
                                     <CheckIcon/>
-                                    <span className="text-sm">Wi-fi available</span>
+                                    <span>Wi-fi available</span>
                                 </div>
 
                                 <div className="flex items-center gap-3">
                                     <CheckIcon/>
-                                    <span className="text-sm">Pets allowed</span>
+                                    <span>Pets allowed</span>
                                 </div>
 
                                 <div className="flex items-center gap-3">
                                     <RoundedXIcon/>
-                                    <span className="text-sm">Parking available</span>
+                                    <span>Parking available</span>
                                 </div>
 
                                 <div className="flex items-center gap-3">
                                     <RoundedXIcon/>
-                                    <span className="text-sm">Breakfast included</span>
+                                    <span>Breakfast included</span>
                                 </div>
                             </div>
                         </div>
