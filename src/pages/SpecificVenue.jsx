@@ -53,7 +53,7 @@ export default function SpecificVenue() {
 
         {/* <!--INFO VENUE--> */}
 
-        <div className="px-[5%] xl:px-[10%] lg:w-3/4 xl:w-full mx-auto">
+        <div className="px-[5%] lg:px-[7%] 2xl:px-[10%] lg:w-3/4 xl:w-full mx-auto">
             <div className="py-[3%] xl:py-[2%] lg:pt-[4%]">
                 <div className="flex font-medium text-sm gap-2 py-2 lg:py-0">
                     <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded-full text-sm 2xl:text-base">
@@ -99,7 +99,7 @@ export default function SpecificVenue() {
 
                     {/* <!--Facilities--> */}
                     
-                    <div className="flex justify-between flex-col md:flex-row border-b border-secondary lg:flex-col md:items-end lg:items-start xl:border-b-0">
+                    <div className="flex xl:flex-col justify-between flex-col md:flex-row border-b border-secondary md:items-end xl:items-start xl:border-b-0">
                         <div className="flex flex-col pb-6 2xl:pb-8">
                             <h2 className="font-bold md:text-lg 2xl:text-xl pb-4">Facilities:</h2>
 
@@ -126,7 +126,7 @@ export default function SpecificVenue() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col items-baseline border-t lg:border-t md:border-t-0 border-primary py-6 2xl:pt-8 lg:w-full">
+                        <div className="flex flex-col items-baseline border-t md:border-t-0 xl:border-t border-primary py-6 2xl:pt-8 xl:w-full">
                             <div className="flex items-center gap-3 pb-1 md:pb-2">
                                 <ShareIcon/>
                                 <span className="font-medium text-sm">Share the venue</span>
