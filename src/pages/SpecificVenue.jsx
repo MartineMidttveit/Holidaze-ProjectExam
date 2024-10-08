@@ -32,7 +32,7 @@ export default function SpecificVenue() {
                             <ChevronRight/>
                         </button>
                     </div>
-                    
+
                     <button className="absolute top-[5%] right-[9%] 2xl:right-[10%] 2xl:top-[10%] bg-background text-sm xl:text-base h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex">
                         <HeartIcon/>
                         Add to favorites
@@ -85,21 +85,20 @@ export default function SpecificVenue() {
                     <img src="map.png" alt="" className="object-cover mt-6 2xl:mt-8 w-full h-28 max-h-40 rounded-md"/>
 
                     <div className="flex flex-col gap-y-3 my-6 2xl:my-8">
-                        <p className="text-sm md:text-base leading-relaxed">Discover the beauty of Reine, Lofoten, from our cozy cabin, perfectly located between 
-                            majestic mountains and serene fjords. The cabin features two bedrooms, a fully equipped kitchen, 
-                            and a spacious living area with stunning views. Enjoy outdoor adventures like hiking and fishing, 
+                        <p className="text-sm md:text-base leading-relaxed">Discover the beauty of Reine, Lofoten, from our cozy cabin, perfectly located between
+                            majestic mountains and serene fjords. The cabin features two bedrooms, a fully equipped kitchen,
+                            and a spacious living area with stunning views. Enjoy outdoor adventures like hiking and fishing,
                             or relax on the terrace.
                         </p>
                         <p className="text-sm md:text-base leading-relaxed">
-                            Just a short distance from Reine's center, you'll have easy access to local restaurants, shops, 
-                            and attractions. Perfect for families, couples, or small groups, this cabin is your ideal base 
+                            Just a short distance from Reine's center, you'll have easy access to local restaurants, shops,
+                            and attractions. Perfect for families, couples, or small groups, this cabin is your ideal base
                             for exploring the wonders of Lofoten. Book your stay and experience Norway's northern paradise!
                         </p>
                     </div>
 
                     {/* <!--Facilities--> */}
-                    
-                    <div className="flex xl:flex-col justify-between flex-col md:flex-row border-b border-secondary md:items-end xl:items-start xl:border-b-0">
+
                         <div className="flex flex-col pb-6 2xl:pb-8">
                             <h2 className="font-bold md:text-lg 2xl:text-xl pb-4">Facilities:</h2>
 
@@ -126,7 +125,7 @@ export default function SpecificVenue() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col items-baseline border-t md:border-t-0 xl:border-t border-primary py-6 2xl:pt-8 xl:w-full">
+                        <div className="hidden xl:flex flex-col border-t border-b xl:border-b-0 border-primary py-6 2xl:pt-8 xl:w-full">
                             <div className="flex items-center gap-3 pb-1 md:pb-2">
                                 <ShareIcon/>
                                 <span className="font-medium text-sm">Share the venue</span>
@@ -139,12 +138,11 @@ export default function SpecificVenue() {
 
                             <p className="text-secondary pt-3 text-sm">Last updated: <span>21.03.2025</span>, <span>17:04</span></p>
                         </div>
-                    </div>
                 </section>
 
         {/* RIGHT SIDE */}
                 <div className="w-full xl:w-1/2 2xl:w-2/5">
-                    <div className="flex justify-between items-center xl:mt-2 2xl:mt-0 border-b py-6 border-secondary xl:border-b-0 xl:py-0">
+                    <div className="flex justify-between items-center xl:mt-2 2xl:mt-0 border-b border-t xl:border-t-0 py-6 border-secondary xl:border-b-0 xl:py-0">
                         <div className="flex gap-3 md:gap-5 items-center">
                             <img src="germany.png" alt="" className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 object-cover rounded-full"/>
                             <div className="flex flex-col">
@@ -152,19 +150,19 @@ export default function SpecificVenue() {
                                 <p className="text-sm lg:text-base">Stine Svendsen</p>
                             </div>
                         </div>
-                        <button className="text-sm 2xl:text-base border rounded border-secondary px-3 lg:px-8 hover:bg-contrast hover:border-contrast hover:text-white duration-300 h-12 2xl:h-14 flex items-center gap-1">Message 
+                        <button className="text-sm 2xl:text-base border rounded border-secondary px-3 lg:px-8 hover:bg-contrast hover:border-contrast hover:text-white duration-300 h-12 2xl:h-14 flex items-center gap-1">Message
                             <span className="hidden md:flex">the host</span></button>
                     </div>
 
         {/* MAKE RESERVATION */}
-                    <div className="bg-white mt-10 rounded-lg shadow-lg">
+                    <div className="bg-white mt-8 xl:mt-10 rounded-lg shadow-lg">
                         <div className="py-8 px-6 md:p-10 lg:p-12">
 
                             <div className="font-bold 2xl:text-xl pb-4 2xl:pb-6">
                                 <h2 className="md:text-lg pb-3">Make a reservation:</h2>
                                 <p className="text-sm md:text-base lg:text-lg pt-1 lg:pt-2">1249 NOK <span className="text-secondary font-normal">/ night</span></p>
                             </div>
-                            
+
                             <form action="" className="flex flex-col md:flex-row w-full gap-4">
                                 <div className="flex flex-col w-full">
                                     <label for="checkIn" className="pb-2 lg:pb-3 font-medium md:font-normal text-sm md:text-base">Check in:</label>
@@ -174,7 +172,7 @@ export default function SpecificVenue() {
                                 <div className="flex flex-col w-full">
                                     <label for="checkOut" className="pb-2 lg:pb-3 font-medium md:font-normal text-sm md:text-base">Check out:</label>
                                     <input type="date" id="checkOut" name="checkOut" className="border border-secondary rounded py-3 px-4 h-12 xl:h-14 text-sm md:text-base"/>
-                                </div>                            
+                                </div>
                             </form>
 
                             <GuestsAmount/>
@@ -200,13 +198,27 @@ export default function SpecificVenue() {
                                 <button className="bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded mt-6 lg:mt-8 hover:shadow-md">BOOK NOW</button>
                             </div>
                         </div>
-                    </div>  
+                    </div>
 
-                    <div className="py-6 lg:py-10">
+                    <div className="pt-6 pb-10 lg:py-10">
                         <p className="text-center pb-1 text-secondary text-sm 2xl:text-base">Pressing the button will take you to the payment page.</p>
                         <p className="text-center text-secondary text-sm 2xl:text-base">For more information regarding booking, read our <span className="underline">terms and conditions.</span></p>
                     </div>
                 </div>
+
+                <div className="xl:hidden flex flex-col border-t border-primary pt-6 pb-8">
+                            <div className="flex items-center gap-3 pb-1 md:pb-2">
+                                <ShareIcon/>
+                                <span className="font-medium text-sm">Share the venue</span>
+                            </div>
+
+                            <div className="flex items-center gap-3">
+                                <ReportIcon/>
+                                <span className="font-medium text-sm">Report the venue</span>
+                            </div>
+
+                            <p className="text-secondary pt-3 text-sm">Last updated: <span>21.03.2025</span>, <span>17:04</span></p>
+                        </div>
             </div>
         </div>
 
