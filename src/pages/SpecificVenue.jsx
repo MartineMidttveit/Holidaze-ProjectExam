@@ -99,7 +99,7 @@ export default function SpecificVenue() {
 
                     {/* <!--Facilities--> */}
                     
-                    <div className="flex justify-between flex-row border-b border-secondary lg:flex-col md:flex-row items-end lg:items-start xl:border-b-0">
+                    <div className="flex justify-between flex-col md:flex-row border-b border-secondary lg:flex-col md:items-end lg:items-start xl:border-b-0">
                         <div className="flex flex-col pb-6 2xl:pb-8">
                             <h2 className="font-bold md:text-lg 2xl:text-xl pb-4">Facilities:</h2>
 
@@ -126,7 +126,7 @@ export default function SpecificVenue() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col items-baseline lg:border-t border-t-0 border-primary py-6 2xl:pt-8 lg:w-full">
+                        <div className="flex flex-col items-baseline border-t lg:border-t md:border-t-0 border-primary py-6 2xl:pt-8 lg:w-full">
                             <div className="flex items-center gap-3 pb-1 md:pb-2">
                                 <ShareIcon/>
                                 <span className="font-medium text-sm">Share the venue</span>
