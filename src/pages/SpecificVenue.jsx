@@ -22,29 +22,29 @@ export default function SpecificVenue() {
         <main className="bg-background text-primary font-poppins relative">
                 <div className="relative bg-white flex items-center justify-center flex-col">
                     <div className='flex items-center'>
-                        <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center">
+                        <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center" type='button'>
                             <ChevronLeft/>
                         </button>
 
                         <img src="lofoten.png" alt="" className="h-96 lg:h-screen-minus-40 object-cover rounded-3xl m-10" />
 
-                        <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center">
+                        <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center" type='button'>
                             <ChevronRight/>
                         </button>
                     </div>
 
-                    <button className="absolute top-[5%] right-[9%] 2xl:right-[10%] 2xl:top-[10%] bg-background text-sm xl:text-base h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex">
+                    <button className="absolute top-[5%] right-[9%] 2xl:right-[10%] 2xl:top-[10%] bg-background text-sm xl:text-base h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex" type='button'>
                         <HeartIcon/>
                         Add to favorites
                     </button>
 
                     <div className="hidden absolute right-[10%] top-[10%] gap-3">
-                        <button className="bg-background h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base">
+                        <button className="bg-background h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base" type='button'>
                             <DeleteIcon/>
                             Delete venue
                         </button>
 
-                        <button className="bg-background h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base">
+                        <button className="bg-background h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base" type='button'>
                             <EditIcon/>
                             Edit venue
                         </button>
@@ -150,7 +150,7 @@ export default function SpecificVenue() {
                                 <p className="text-sm lg:text-base">Stine Svendsen</p>
                             </div>
                         </div>
-                        <button className="text-sm 2xl:text-base border rounded border-secondary px-3 lg:px-8 hover:bg-contrast hover:border-contrast hover:text-white duration-300 h-12 2xl:h-14 flex items-center gap-1">Message
+                        <button className="text-sm 2xl:text-base border rounded border-secondary px-3 lg:px-8 hover:bg-contrast hover:border-contrast hover:text-white duration-300 h-12 2xl:h-14 flex items-center gap-1" type='button'>Message
                             <span className="hidden md:flex">the host</span></button>
                     </div>
 
@@ -195,7 +195,7 @@ export default function SpecificVenue() {
                                     <p>5175 NOK</p>
                                 </div>
 
-                                <button className="bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded mt-6 lg:mt-8 hover:shadow-md">BOOK NOW</button>
+                                <button className="bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded mt-6 lg:mt-8 hover:shadow-md" type='submit'>BOOK NOW</button>
                             </div>
                         </div>
                     </div>
@@ -226,7 +226,7 @@ export default function SpecificVenue() {
 {/* SET IT TO FLEX WHEN CLICKING ON THE DELETE-BUTTON.  */}
         <div className='absolute inset-0 bg-black bg-opacity-40 items-center justify-center h-screen text-center hidden'>
             <div className='bg-white rounded px-4 md:p-16 flex items-center justify-center flex-col relative h-screen w-full md:h-fit md:w-fit'>
-                <button className='absolute top-6 right-6 bg-background rounded-full h-12 w-12 flex items-center justify-center'>
+                <button className='absolute top-6 right-6 bg-background rounded-full h-12 w-12 flex items-center justify-center' type='button'>
                     <CloseIcon/>
                 </button>
 
@@ -239,8 +239,8 @@ export default function SpecificVenue() {
                 <p className='pb-4 lg:pb-6 text-sm md:text-base'>Are you sure that you want to proceed?</p>
 
                 <div className='flex gap-3 items-center'>
-                    <button className='border border-primary h-12 2xl:h-14 py-4 font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base hover:bg-customLightBlue hover:border-customLightBlue duration-300'>Cancel</button>
-                    <button className='bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base'>Delete</button>
+                    <button className='border border-primary h-12 2xl:h-14 py-4 font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base hover:bg-customLightBlue hover:border-customLightBlue duration-300' type='button'>Cancel</button>
+                    <button className='bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base' type='button'>Delete</button>
                 </div>
             </div>
         </div>
@@ -249,7 +249,7 @@ export default function SpecificVenue() {
 {/* SET IT TO FLEX WHEN CLICKING ON THE DELETE-BUTTON.  */}
         <div className='absolute inset-0 bg-black bg-opacity-40 items-center justify-center h-screen flex'>
             <div className='bg-white rounded px-4 md:p-16 flex justify-center flex-col relative h-screen w-full md:h-fit md:w-fit'>
-                <button className='absolute top-6 right-6 bg-background rounded-full h-12 w-12 flex items-center justify-center'>
+                <button className='absolute top-6 right-6 bg-background rounded-full h-12 w-12 flex items-center justify-center' type='button'>
                     <CloseIcon/>
                 </button>
 
@@ -258,11 +258,11 @@ export default function SpecificVenue() {
 
                 <div className='flex gap-4 py-6'>
                     <div title="Facebook" className='bg-background h-20 w-20 rounded-full flex justify-center items-center hover:scale-110 duration-200'>
-                        <i className="fa-brands fa-facebook text-3xl text-contrast"></i>
+                        <i className="fa-brands fa-facebook text-3xl text-contrast"/>
                     </div>
 
                     <div title="Messenger" className='bg-background h-20 w-20 rounded-full flex justify-center items-center hover:scale-110 duration-200'>
-                        <i className="fa-brands fa-facebook-messenger text-3xl messenger-linear"></i>
+                        <i className="fa-brands fa-facebook-messenger text-3xl messenger-linear"/>
                     </div>
 
                     <div title="Outlook" className='bg-background h-20 w-20 rounded-full flex justify-center items-center hover:scale-110 duration-200'>
@@ -278,7 +278,7 @@ export default function SpecificVenue() {
                     <div className="h-12 border border-secondary w-full flex items-center px-4 rounded-left">
                         https://ui.shadcn.com/docs/components/separator
                     </div>
-                    <button className='rounded-right h-12 border-contrast bg-contrast px-4 flex items-center justify-center text-white font-medium text-sm 2xl:text-base'>COPY</button>
+                    <button className='rounded-right h-12 border-contrast bg-contrast px-4 flex items-center justify-center text-white font-medium text-sm 2xl:text-base' type='button'>COPY</button>
                 </div>
             </div>
         </div>
