@@ -74,7 +74,7 @@ export default function SpecificVenue() {
             </div>
 
         {/* <!--LEFT SIDE INFO--> */}
-            <div className="flex flex-col xl:flex-row justify-between xl:gap-4 2xl:gap-20">
+            <div className="flex flex-col xl:flex-row justify-between xl:gap-4 2xl:gap-10">
                 <section className="w-full xl:w-1/2 2xl:w-2/5 xl:pr-20">
                     <h1 className="text-xl lg:text-2xl 2xl:text-3xl font-bold xl:mt-2 2xl:mt-0">Cabin by the fjord</h1>
                     <div className="flex gap-2 text-secondary pt-2 lg:pt-3 items-center">
@@ -99,8 +99,8 @@ export default function SpecificVenue() {
 
                     {/* <!--Facilities--> */}
                     
-                    <div className="flex justify-between border-b border-secondary pb-8 flex-col gap-5 md:flex-row md:items-end xl:border-b-0">
-                        <div className="flex flex-col xl:border-b-0">
+                    <div className="flex justify-between flex-row border-b border-secondary lg:flex-col md:flex-row items-end lg:items-start xl:border-b-0">
+                        <div className="flex flex-col pb-6 2xl:pb-8">
                             <h2 className="font-bold md:text-lg 2xl:text-xl pb-4">Facilities:</h2>
 
                             <div className="flex flex-col gap-1 text-sm md:text-base">
@@ -126,7 +126,7 @@ export default function SpecificVenue() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col xl:hidden items-baseline border-t border-primary pt-6 md:border-t-0 md:pt-0">
+                        <div className="flex flex-col items-baseline lg:border-t border-t-0 border-primary py-6 2xl:pt-8 lg:w-full">
                             <div className="flex items-center gap-3 pb-1 md:pb-2">
                                 <ShareIcon/>
                                 <span className="font-medium text-sm">Share the venue</span>
@@ -139,22 +139,6 @@ export default function SpecificVenue() {
 
                             <p className="text-secondary pt-3 text-sm">Last updated: <span>21.03.2025</span>, <span>17:04</span></p>
                         </div>
-                    </div>
-                    
-
-                    {/* <!--Share, report, last updated--> */}
-                    <div className="flex-col gap-2 border-t border-secondary xl:pt-10 hidden xl:flex">
-                        <div className="flex items-center gap-3">
-                        <ShareIcon/>
-                            <span className="font-medium">Share the venue</span>
-                        </div>
-
-                        <div className="flex items-center gap-3">
-                        <ReportIcon/>
-                            <span className="font-medium">Report the venue</span>
-                        </div>
-
-                        <p className="text-secondary pt-3">Last updated: <span>21.03.2025</span>, <span>17:04</span></p>
                     </div>
                 </section>
 

@@ -35,3 +35,5 @@ IF THE USER OWNS THE VENUE:
 * Make sure that its only possible to book a venue if there is at least 1 adult added. If someone adds 3 children and 0 adults, there should be a error-message saying that it's not possible without an adult above 18 years old, and that they can read terms and conditions. 
   
 * When clicking on the expand-image-button, it should open a modal where you can see the image in a bigger size.
+
+* Would be cool to add the temperature somehow, and perhaps if its sunny, snowing, raining or cloudy.
