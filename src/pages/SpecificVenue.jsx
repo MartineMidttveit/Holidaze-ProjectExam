@@ -55,18 +55,18 @@ export default function SpecificVenue() {
 
         <div className="px-[5%] lg:px-[7%] 2xl:px-[10%] lg:w-3/4 xl:w-full mx-auto">
             <div className="py-[3%] xl:py-[2%] lg:pt-[4%]">
-                <div className="flex font-medium text-sm gap-2 py-2 lg:py-0">
-                    <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded-full text-sm 2xl:text-base">
+                <div className="flex font-medium text-sm gap-3 py-2 lg:py-0">
+                    <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
                         <GuestIcon/>
                         <p className="text-sm flex gap-1 items-center">4 <span className="hidden md:flex">guests</span></p>
                     </div>
 
-                    <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded-full text-sm 2xl:text-base">
+                    <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
                         <BedIcon/>
                         <p className="text-sm flex gap-1 items-center">2 <span className="hidden md:flex">bedrooms</span></p>
                     </div>
 
-                    <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded-full text-sm 2xl:text-base">
+                    <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
                         <RatingIcon/>
                         <p className="text-sm flex gap-1 items-center">4.5 <span className="hidden md:flex">rating</span></p>
                     </div>
@@ -207,18 +207,18 @@ export default function SpecificVenue() {
                 </div>
 
                 <div className="xl:hidden flex flex-col border-t border-primary pt-6 pb-8">
-                            <div className="flex items-center gap-3 pb-1 md:pb-2">
-                                <ShareIcon/>
-                                <span className="font-medium text-sm">Share the venue</span>
-                            </div>
+                    <div className="flex items-center gap-3 pb-1 md:pb-2">
+                        <ShareIcon/>
+                        <span className="font-medium text-sm">Share the venue</span>
+                    </div>
 
-                            <div className="flex items-center gap-3">
-                                <ReportIcon/>
-                                <span className="font-medium text-sm">Report the venue</span>
-                            </div>
+                    <div className="flex items-center gap-3">
+                        <ReportIcon/>
+                        <span className="font-medium text-sm">Report the venue</span>
+                    </div>
 
-                            <p className="text-secondary pt-3 text-sm">Last updated: <span>21.03.2025</span>, <span>17:04</span></p>
-                        </div>
+                    <p className="text-secondary pt-3 text-sm">Last updated: <span>21.03.2025</span>, <span>17:04</span></p>
+                </div>
             </div>
         </div>
 
@@ -226,7 +226,7 @@ export default function SpecificVenue() {
 {/* SET IT TO FLEX WHEN CLICKING ON THE DELETE-BUTTON.  */}
         <div className='absolute inset-0 bg-black bg-opacity-40 items-center justify-center h-screen text-center hidden'>
             <div className='bg-white rounded px-4 md:p-16 flex items-center justify-center flex-col relative h-screen w-full md:h-fit md:w-fit'>
-                <button className='absolute top-6 right-6'>
+                <button className='absolute top-6 right-6 bg-background rounded-full h-12 w-12 flex items-center justify-center'>
                     <CloseIcon/>
                 </button>
 
@@ -241,6 +241,44 @@ export default function SpecificVenue() {
                 <div className='flex gap-3 items-center'>
                     <button className='border border-primary h-12 2xl:h-14 py-4 font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base hover:bg-customLightBlue hover:border-customLightBlue duration-300'>Cancel</button>
                     <button className='bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base'>Delete</button>
+                </div>
+            </div>
+        </div>
+
+{/* SHARE VENUE */}
+{/* SET IT TO FLEX WHEN CLICKING ON THE DELETE-BUTTON.  */}
+        <div className='absolute inset-0 bg-black bg-opacity-40 items-center justify-center h-screen flex'>
+            <div className='bg-white rounded px-4 md:p-16 flex justify-center flex-col relative h-screen w-full md:h-fit md:w-fit'>
+                <button className='absolute top-6 right-6 bg-background rounded-full h-12 w-12 flex items-center justify-center'>
+                    <CloseIcon/>
+                </button>
+
+                <h2 className='md:text-lg lg:text-xl font-bold'>Share the venue with friends</h2>
+                <p className='pt-4 lg:pt-5 text-sm md:text-base'>To whom or where do you want to share the venue?</p>
+
+                <div className='flex gap-4 py-6'>
+                    <div title="Facebook" className='bg-background h-20 w-20 rounded-full flex justify-center items-center hover:scale-110 duration-200'>
+                        <i className="fa-brands fa-facebook text-3xl text-contrast"></i>
+                    </div>
+
+                    <div title="Messenger" className='bg-background h-20 w-20 rounded-full flex justify-center items-center hover:scale-110 duration-200'>
+                        <i className="fa-brands fa-facebook-messenger text-3xl messenger-linear"></i>
+                    </div>
+
+                    <div title="Outlook" className='bg-background h-20 w-20 rounded-full flex justify-center items-center hover:scale-110 duration-200'>
+                        <img src="outlook.png" alt="Outlook logo" className='h-8 w-8 object-cover' />
+                    </div>
+
+                    <div title="Snapchat" className='bg-background h-20 w-20 rounded-full flex justify-center items-center hover:scale-110 duration-200'>
+                        <img src="snapchat.png" alt="Snapchat logo" className='h-9 w-9 object-cover' />
+                    </div>
+                </div>
+                
+                <div className='flex'>
+                    <div className="h-12 border border-secondary w-full flex items-center px-4 rounded-left">
+                        https://ui.shadcn.com/docs/components/separator
+                    </div>
+                    <button className='rounded-right h-12 border-contrast bg-contrast px-4 flex items-center justify-center text-white font-medium text-sm 2xl:text-base'>COPY</button>
                 </div>
             </div>
         </div>
