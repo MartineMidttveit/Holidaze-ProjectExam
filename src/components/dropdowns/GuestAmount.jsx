@@ -53,9 +53,9 @@ const GuestsAmount = () => {
                 <div className="flex items-center justify-between py-2">
                     <p className='text-sm lg:text-base'>Adults</p>
                     <div className="flex items-center gap-4">
-                        <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('adults', '-')}>-</button>
+                        <button type="button" className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('adults', '-')}>-</button>
                         <span>{adults}</span>
-                        <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('adults', '+')}>+</button>
+                        <button type="button" className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('adults', '+')}>+</button>
                     </div>
                 </div>
 
@@ -63,9 +63,9 @@ const GuestsAmount = () => {
                 <div className="flex items-center justify-between py-2">
                     <p className='text-sm lg:text-base'>Children</p>
                     <div className="flex items-center gap-4">
-                        <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('children', '-')}>-</button>
+                        <button type="button" className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('children', '-')}>-</button>
                         <span>{children}</span>
-                        <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('children', '+')}>+</button>
+                        <button type="button" className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('children', '+')}>+</button>
                     </div>
                 </div>
 
@@ -73,13 +73,13 @@ const GuestsAmount = () => {
                 <div className="flex items-center justify-between py-2">
                     <p className='text-sm lg:text-base'>Pets</p>
                     <div className="flex items-center gap-4">
-                        <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('pets', '-')}>-</button>
+                        <button type="button" className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('pets', '-')}>-</button>
                         <span>{pets}</span>
-                        <button className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('pets', '+')}>+</button>
+                        <button type="button" className="h-8 w-8 bg-background rounded-full flex items-center justify-center" onClick={() => handleCountChange('pets', '+')}>+</button>
                     </div>
                 </div>
 
-                <button className="bg-customOrange py-2 rounded mt-4 duration-300 h-12 w-full" onClick={handleApply}>Apply</button>
+                <button type="button" className="bg-customOrange py-2 rounded mt-4 duration-300 h-12 w-full" onClick={handleApply}>Apply</button>
             </div>
         </div>
     );

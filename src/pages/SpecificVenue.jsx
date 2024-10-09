@@ -128,15 +128,15 @@ export default function SpecificVenue() {
                         <div className="hidden xl:flex flex-col border-t border-b xl:border-b-0 border-primary py-6 2xl:pt-8 xl:w-full">
                             <div className="flex items-center gap-3 pb-1 md:pb-2">
                                 <ShareIcon/>
-                                <span className="font-medium text-sm">Share the venue</span>
+                                <span className="font-medium text-sm lg:text-base">Share the venue</span>
                             </div>
 
                             <div className="flex items-center gap-3">
                                 <ReportIcon/>
-                                <span className="font-medium text-sm">Report the venue</span>
+                                <span className="font-medium text-sm lg:text-base">Report the venue</span>
                             </div>
 
-                            <p className="text-secondary pt-3 text-sm">Last updated: <span>21.03.2025</span>, <span>17:04</span></p>
+                            <p className="text-secondary pt-3 text-sm lg:text-base">Last updated: <span>21.03.2025</span>, <span>17:04</span></p>
                         </div>
                 </section>
 
@@ -247,7 +247,7 @@ export default function SpecificVenue() {
 
 {/* SHARE VENUE */}
 {/* SET IT TO FLEX WHEN CLICKING ON THE DELETE-BUTTON.  */}
-        <div className='absolute inset-0 bg-black bg-opacity-40 items-center justify-center h-screen flex'>
+        <div className='absolute inset-0 bg-black bg-opacity-40 items-center justify-center h-screen hidden'>
             <div className='bg-white rounded px-4 md:p-16 flex justify-center flex-col relative h-screen w-full md:h-fit md:w-fit'>
                 <button className='absolute top-6 right-6 bg-background rounded-full h-12 w-12 flex items-center justify-center' type='button'>
                     <CloseIcon/>

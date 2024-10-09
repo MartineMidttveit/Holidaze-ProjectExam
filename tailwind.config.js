@@ -10,6 +10,7 @@ export default {
         contrast: '#1A73E8',
         customOrange: '#FF8E2B',
         customLightBlue: '#D4E5FB',
+        darkBackground: '#DFDFDF',
       }, 
       height: {
         'screen-minus-40': 'calc(100vh - 40rem)',
