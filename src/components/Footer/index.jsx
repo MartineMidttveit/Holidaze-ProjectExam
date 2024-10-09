@@ -1,6 +1,4 @@
 import ArrowRight from "../SVG/ArrowRight"
-import PhoneIcon from "../SVG/PhoneIcon"
-import MailIcon from "../SVG/MailIcon"
 
 export default function Footer() {
     return(
@@ -90,7 +88,7 @@ export default function Footer() {
             </div>
 
             <div className="border-t border-secondary py-6 text-secondary">
-                <div className="px-[5%] lg:px-[7%] 2xl:px-[10%] flex justify-between w-full">
+                <div className="px-[5%] lg:px-[7%] 2xl:px-[10%] flex justify-between items-center w-full">
                     <p className="font-medium flex items-center gap-1"><span className="text-lg">©</span>Holidaze 2024</p>
 
                         <p className="hidden xl:flex">Your perfect getaway, just a click away!</p>

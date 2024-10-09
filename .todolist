@@ -37,3 +37,5 @@ IF THE USER OWNS THE VENUE:
 * When clicking on the expand-image-button, it should open a modal where you can see the image in a bigger size.
 
 * Would be cool to add the temperature somehow, and perhaps if its sunny, snowing, raining or cloudy.
+
+* Make a reusable modal component 
