@@ -1,6 +1,8 @@
 import ArrowRight from "../components/SVG/ArrowRight"
 import ArrowUp from "../components/SVG/ArrowUp"
 
+import { Link } from "react-router-dom";
+
 export default function Footer() {
 
     const handlePageTop = () => {
@@ -18,10 +20,10 @@ export default function Footer() {
             <div className="grid gap-y-6 grid-cols-2 lg:flex justify-between w-full xl:w-4/5 2xl:w-2/3 pt-6 xl:pt-0">
                 <div className="flex flex-col gap-2 xl:w-1/4">
                     <h4 className="font-medium">Support</h4>
-                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
+                    <Link to="/contact" className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Contact us
                         <ArrowRight/>
-                    </span>
+                    </Link>
 
                     <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         FAQs

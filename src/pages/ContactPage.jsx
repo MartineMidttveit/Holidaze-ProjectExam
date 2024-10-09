@@ -4,12 +4,12 @@ export default function ContactPage() {
     return(
         <div className="flex items-center">
             <section className="w-1/2 px-[5%] 2xl:pr-[10%] lg:pl-[7%] 2xl:pl-[15%]">
-                <h2 className="text-contrast font-semibold tracking-wider">CONTACT US</h2>
+                <h2 className="text-contrast font-bold tracking-wider">CONTACT US</h2>
                 <h1 className="text-6xl font-bold pt-4">Get in touch</h1>
 
                 <div className="py-8">
-                    <p>We love questions and feedback - and we're always happy to help!</p>
-                    <p>Here are some ways to contact us:</p>
+                    <p>We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out to us.</p>
+                    <p className="pt-4">Here are some ways to contact us:</p>
                 </div>
 
                 <div className="flex flex-col gap-5">
