@@ -2,6 +2,7 @@ import DeleteIcon from '../components/SVG/DeleteIcon';
 import RoundedXIcon from '../components/SVG/RoundedXIcon';
 import ChevronRight from '../components/SVG/ChevronRight';
 import ChevronLeft from '../components/SVG/ChevronLeft';
+import ChevronDown from '../components/SVG/ChevronDown';
 import EditIcon from '../components/SVG/EditIcon';
 import GuestIcon from '../components/SVG/GuestIcon';
 import HeartIcon from '../components/SVG/HeartIcon';
@@ -36,6 +37,7 @@ const icons = {
   searchIcon: SearchIcon,
   mailIcon: MailIcon,
   phoneIcon: PhoneIcon,
+  chevronDown: ChevronDown,
 };
 
 export default icons;
