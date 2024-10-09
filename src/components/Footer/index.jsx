@@ -5,100 +5,100 @@ import MailIcon from "../SVG/MailIcon"
 export default function Footer() {
     return(
         <footer className="flex flex-col bg-background text-primary border-t border-secondary w-full font-poppins">
-            <div className="flex justify-between px-[5%] lg:px-[7%] 2xl:px-[10%] py-6">
+            <div className="flex flex-col xl:flex-row justify-between px-[5%] lg:px-[7%] 2xl:px-[10%] pt-10 pb-12">
                 <span className="font-bold text-xl">Holidaze</span>
 
-                <div className="flex flex-col gap-2">
+            <div className="grid gap-y-6 grid-cols-2 lg:flex justify-between w-full xl:w-4/5 2xl:w-2/3 pt-6 xl:pt-0">
+                <div className="flex flex-col gap-2 xl:w-1/4">
                     <h4 className="font-medium">Support</h4>
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Contact us
                         <ArrowRight/>
                     </span>
 
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         FAQs
                         <ArrowRight/>
                     </span>
 
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Help center
-                        <ArrowRight/>
-                    </span>
-
-                    <span className="flex gap-2 items-center text-secondary">
-                        Cancellations & Refunds
                         <ArrowRight/>
                     </span>
                 </div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 xl:w-1/4">
                     <h4 className="font-medium">Company</h4>
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         About us
                         <ArrowRight/>
                     </span>
 
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Careers
                         <ArrowRight/>
                     </span>
 
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Press & Media
                         <ArrowRight/>
                     </span>
 
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Blog
                         <ArrowRight/>
                     </span>
                 </div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 xl:w-1/4">
                     <h4 className="font-medium">Legal</h4>
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Terms & Conditions
                         <ArrowRight/>
                     </span>
 
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Privacy policy
                         <ArrowRight/>
                     </span>
 
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Cookie policy
                         <ArrowRight/>
                     </span>
                 </div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 xl:w-1/4">
                     <h4 className="font-medium">Explore</h4>
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Travel guides
                         <ArrowRight/>
                     </span>
 
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Popular venues
                         <ArrowRight/>
                     </span>
 
-                    <span className="flex gap-2 items-center text-secondary">
+                    <span className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Travel tips
                         <ArrowRight/>
                     </span>
                 </div>
             </div>
+                
+            </div>
 
-            <div className="border-t border-secondary py-6">
+            <div className="border-t border-secondary py-6 text-secondary">
                 <div className="px-[5%] lg:px-[7%] 2xl:px-[10%] flex justify-between w-full">
                     <p className="font-medium flex items-center gap-1"><span className="text-lg">©</span>Holidaze 2024</p>
+
+                        <p className="hidden xl:flex">Your perfect getaway, just a click away!</p>
                         <div className="flex gap-4 text-2xl">
-                            <i className="fa-brands fa-linkedin hover:scale-110 duration-200"/>
-                            <i class="fa-brands fa-square-facebook hover:scale-110 duration-200"/>
-                            <i class="fa-brands fa-square-instagram hover:scale-110 duration-200"/>
-                            <i class="fa-brands fa-youtube hover:scale-110 duration-200"/>
+                            <i className="fa-brands fa-linkedin hover:scale-110 hover:text-primary duration-200"/>
+                            <i class="fa-brands fa-square-facebook hover:scale-110 hover:text-primary duration-200"/>
+                            <i class="fa-brands fa-square-instagram hover:scale-110 hover:text-primary duration-200"/>
+                            <i class="fa-brands fa-youtube hover:scale-110 hover:text-primary duration-200"/>
                         </div>
                 </div>
                 
