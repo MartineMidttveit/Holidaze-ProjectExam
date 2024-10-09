@@ -8,8 +8,8 @@ export default function ContactPage() {
                 <h1 className="text-6xl font-bold pt-4">Get in touch</h1>
 
                 <div className="py-8">
-                    <p>We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out to us.</p>
-                    <p className="pt-4">Here are some ways to contact us:</p>
+                    <p className="leading-relaxed">We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out to us.</p>
+                    <p className="pt-4 leading-relaxed">Here are some ways to contact us:</p>
                 </div>
 
                 <div className="flex flex-col gap-5">
@@ -56,7 +56,7 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            <section className="bg-background w-1/2 py-20 flex justify-end px-[5%] lg:pr-[7%] lg:pl-0 2xl:pr-[15%] 2xl:pl-0">
+            <section className="bg-background w-1/2 flex justify-end px-[5%] lg:pr-[7%] lg:pl-0 2xl:pr-[15%] 2xl:pl-0 py-36">
                 <div className="2xl:ml-[15%] bg-white w-full rounded-lg">
                     <h1 className="text-2xl pt-10 px-12 font-bold">Contact</h1>
 
