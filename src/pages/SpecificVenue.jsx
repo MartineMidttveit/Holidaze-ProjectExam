@@ -20,7 +20,7 @@ import GuestsAmount from '../components/dropdowns/GuestAmount';
 export default function SpecificVenue() {
     return(
         <main className="bg-background text-primary font-poppins relative">
-                <div className="relative bg-white flex items-center justify-center flex-col">
+                <div className="relative flex items-center justify-center flex-col">
                     <div className='flex items-center'>
                         <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center" type='button'>
                             <ChevronLeft/>
@@ -53,7 +53,7 @@ export default function SpecificVenue() {
 
         {/* <!--INFO VENUE--> */}
 
-        <div className="px-[5%] lg:px-[7%] 2xl:px-[10%] lg:w-3/4 xl:w-full mx-auto">
+        <div className="px-[5%] lg:px-[7%] 2xl:px-[15%] lg:w-3/4 xl:w-full mx-auto">
             <div className="py-[3%] xl:py-[2%] lg:pt-[4%]">
                 <div className="flex font-medium text-sm gap-3 py-2 lg:py-0">
                     <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
@@ -74,8 +74,8 @@ export default function SpecificVenue() {
             </div>
 
         {/* <!--LEFT SIDE INFO--> */}
-            <div className="flex flex-col xl:flex-row justify-between xl:gap-4 2xl:gap-10">
-                <section className="w-full xl:w-1/2 2xl:w-2/5 xl:pr-20">
+            <div className="flex flex-col xl:flex-row justify-between xl:gap-[7%] 2xl:gap-[10%]">
+                <section className="w-full xl:w-1/2 2xl:max-w-2xl">
                     <h1 className="text-xl lg:text-2xl 2xl:text-3xl font-bold xl:mt-2 2xl:mt-0">Cabin by the fjord</h1>
                     <div className="flex gap-2 text-secondary pt-2 lg:pt-3 items-center">
                         <LocationIcon/>
@@ -141,7 +141,7 @@ export default function SpecificVenue() {
                 </section>
 
         {/* RIGHT SIDE */}
-                <div className="w-full xl:w-1/2 2xl:w-2/5">
+                <div className="w-full xl:w-1/2 2xl:max-w-3xl">
                     <div className="flex justify-between items-center xl:mt-2 2xl:mt-0 border-b border-t xl:border-t-0 py-6 border-secondary xl:border-b-0 xl:py-0">
                         <div className="flex gap-3 md:gap-5 items-center">
                             <img src="germany.png" alt="" className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16 object-cover rounded-full"/>
