@@ -32,23 +32,6 @@ export default function SpecificVenue() {
                             <ChevronRight/>
                         </button>
                     </div>
-
-                    <button className="absolute top-[5%] right-[9%] 2xl:right-[10%] 2xl:top-[10%] bg-background text-sm xl:text-base h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex" type='button'>
-                        <HeartIcon/>
-                        Add to favorites
-                    </button>
-
-                    <div className="hidden absolute right-[10%] top-[10%] gap-3">
-                        <button className="bg-background h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base" type='button'>
-                            <DeleteIcon/>
-                            Delete venue
-                        </button>
-
-                        <button className="bg-background h-12 2xl:h-14 px-4 xl:px-6 rounded items-center gap-3 flex text-sm xl:text-base" type='button'>
-                            <EditIcon/>
-                            Edit venue
-                        </button>
-                    </div>
                 </div>
 
         {/* <!--INFO VENUE--> */}
@@ -62,13 +45,26 @@ export default function SpecificVenue() {
                     </div>
 
                     <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
-                        <BedIcon/>
-                        <p className="text-sm flex gap-1 items-center">2 <span className="hidden md:flex">bedrooms</span></p>
-                    </div>
-
-                    <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
                         <RatingIcon/>
                         <p className="text-sm flex gap-1 items-center">4.5 <span className="hidden md:flex">rating</span></p>
+                    </div>
+
+                    <button className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base" type='button'>
+                        <HeartIcon/>
+                        <p className="text-sm flex gap-1 items-center">Add to favorites</p>
+                    </button>
+
+{/* SET TO FLEX IF THE USER OWNS THE VENUE, WHILE ADD TO FAVORITES WILL BE HIDDEN */}
+                    <div className="hidden gap-3">
+                        <button className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base" type='button'>
+                            <DeleteIcon/>
+                            <span className='text-sm flex gap-1 items-center'>Delete venue</span>
+                        </button>
+
+                        <button className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base" type='button'>
+                            <EditIcon/>
+                            <span className='text-sm flex gap-1 items-center'>Edit venue</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -102,7 +98,7 @@ export default function SpecificVenue() {
                         <div className="flex flex-col pb-6 2xl:pb-8">
                             <h2 className="font-bold md:text-lg 2xl:text-xl pb-4">Facilities:</h2>
 
-                            <div className="flex flex-col gap-1 text-sm md:text-base">
+                            <div className="flex flex-col gap-1 xl:gap-2 text-sm md:text-base">
                                 <div className="flex items-center gap-3">
                                     <CheckIcon/>
                                     <span>Wi-fi available</span>

@@ -40,13 +40,14 @@ const GuestsAmount = () => {
     return (
         <div className="pt-3 lg:pt-5">
             <p className="pb-2 lg:pb-3 font-medium md:font-normal text-sm md:text-base">Guests:</p>
-            <div 
-                className="border border-secondary rounded bg-white py-3 h-12 xl:h-14 max-h-14 flex items-center justify-between px-4 cursor-pointer" 
+            <button
+                type='button'
+                className="border border-secondary rounded bg-white py-3 h-12 xl:h-14 max-h-14 flex items-center justify-between px-4 w-full" 
                 onClick={toggleDropdown} 
             >
                 <p className="text-sm md:text-base">{guestText}</p>
                 <ChevronDown />
-            </div>
+            </button>
 
             <div className={`bg-white flex-col border border-secondary px-10 py-7 border-t-0 ${isOpen ? 'block' : 'hidden'}`}>
                 {/* Adults */}
