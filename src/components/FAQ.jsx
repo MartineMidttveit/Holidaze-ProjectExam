@@ -57,7 +57,7 @@ export default function FAQ() {
                                 <icons.chevronDown/> 
                             </button>
                             {activeIndex === index && (
-                                <p className="pt-5 pb-3 leading-relaxed">{faq.answer}</p>
+                                <p className="pt-5 pb-3 leading-relaxed text-secondary">{faq.answer}</p>
                             )}
                         </div>
                     ))}
