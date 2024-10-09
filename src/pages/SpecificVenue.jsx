@@ -1,19 +1,4 @@
-import React from 'react';
-import DeleteIcon from '../components/SVG/DeleteIcon';
-import RoundedXIcon from '../components/SVG/RoundedXIcon';
-import ChevronRight from '../components/SVG/ChevronRight';
-import ChevronLeft from '../components/SVG/ChevronLeft';
-import EditIcon from '../components/SVG/EditIcon';
-import GuestIcon from '../components/SVG/GuestIcon';
-import HeartIcon from '../components/SVG/HeartIcon';
-import LocationIcon from '../components/SVG/LocationIcon';
-import ShareIcon from '../components/SVG/ShareIcon';
-import RatingIcon from '../components/SVG/RatingIcon';
-import CheckIcon from '../components/SVG/CheckIcon';
-import ReportIcon from '../components/SVG/ReportIcon';
-import CloseIcon from '../components/SVG/CloseIcon';
-import DeleteIconBig from '../components/SVG/DeleteIconBig';
-import GalleryIcon from '../components/SVG/GalleryIcon';
+import icons from '../utils/icons';
 
 import GuestsAmount from '../components/dropdowns/GuestAmount';
 
@@ -24,18 +9,18 @@ export default function SpecificVenue() {
                     <div className='flex items-center w-full relative'>
 
                         <button type="button" className="absolute right-10 top-10 flex items-center justify-between gap-2 bg-background px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
-                            <GalleryIcon/>
+                            <icons.galleryIcon/>
                             Gallery
                         </button>
 
                         <button className="absolute left-10 rounded-full backdrop-blur bg-background bg-opacity-75 hover:bg-opacity-100 duration-300 h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center" type='button'>
-                            <ChevronLeft/>
+                            <icons.chevronLeft/>
                         </button>
 
                         <img src="lofoten.png" alt="" className="h-96 lg:h-screen-minus-25 object-cover rounded-btm w-full" />
 
                         <button className="absolute right-10 rounded-full backdrop-blur bg-background bg-opacity-75 hover:bg-opacity-100 duration-300 h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center" type='button'>
-                            <ChevronRight/>
+                            <icons.chevronRight/>
                         </button>
                     </div>
                 </div>
@@ -46,29 +31,29 @@ export default function SpecificVenue() {
             <div className="py-[3%] xl:py-[2%] lg:pt-[4%]">
                 <div className="flex font-medium text-sm gap-3 py-2 lg:py-0">
                     <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
-                        <GuestIcon/>
+                        <icons.guestIcon/>
                         <p className="text-sm flex gap-1 items-center">4 <span className="hidden md:flex">guests</span></p>
                     </div>
 
                     <div className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
-                        <RatingIcon/>
+                        <icons.ratingIcon/>
                         <p className="text-sm flex gap-1 items-center">4.5 <span className="hidden md:flex">rating</span></p>
                     </div>
 
                     <button className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base" type='button'>
-                        <HeartIcon/>
+                        <icons.heartIcon/>
                         <p className="text-sm flex gap-1 items-center">Add to favorites</p>
                     </button>
 
 {/* SET TO FLEX IF THE USER OWNS THE VENUE, WHILE ADD TO FAVORITES WILL BE HIDDEN */}
                     <div className="hidden gap-3">
                         <button className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base" type='button'>
-                            <DeleteIcon/>
+                            <icons.deleteIcon/>
                             <span className='text-sm flex gap-1 items-center'>Delete venue</span>
                         </button>
 
                         <button className="flex items-center justify-between gap-2 border border-secondary px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base" type='button'>
-                            <EditIcon/>
+                            <icons.editIcon/>
                             <span className='text-sm flex gap-1 items-center'>Edit venue</span>
                         </button>
                     </div>
@@ -80,7 +65,7 @@ export default function SpecificVenue() {
                 <section className="w-full xl:w-1/2 2xl:max-w-2xl">
                     <h1 className="text-xl lg:text-2xl 2xl:text-3xl font-bold xl:mt-2 2xl:mt-0">Cabin by the fjord</h1>
                     <div className="flex gap-2 text-secondary pt-2 lg:pt-3 items-center">
-                        <LocationIcon/>
+                        <icons.locationIcon/>
                         <p className="text-sm md:text-base">Traneveien 13, 8513 Reine, Lofoten, Norway </p>
                     </div>
 
@@ -106,22 +91,22 @@ export default function SpecificVenue() {
 
                             <div className="flex flex-col gap-1 xl:gap-2 text-sm md:text-base">
                                 <div className="flex items-center gap-3">
-                                    <CheckIcon/>
+                                    <icons.checkIcon/>
                                     <span>Wi-fi available</span>
                                 </div>
 
                                 <div className="flex items-center gap-3">
-                                    <CheckIcon/>
+                                <icons.checkIcon/>
                                     <span>Pets allowed</span>
                                 </div>
 
                                 <div className="flex items-center gap-3">
-                                    <RoundedXIcon/>
+                                    <icons.roundedXIcon/>
                                     <span>Parking available</span>
                                 </div>
 
                                 <div className="flex items-center gap-3">
-                                    <RoundedXIcon/>
+                                    <icons.roundedXIcon/>
                                     <span>Breakfast included</span>
                                 </div>
                             </div>
@@ -129,12 +114,12 @@ export default function SpecificVenue() {
 
                         <div className="hidden xl:flex flex-col border-t border-b xl:border-b-0 border-primary py-6 2xl:pt-8 xl:w-full">
                             <div className="flex items-center gap-3 pb-1 md:pb-2">
-                                <ShareIcon/>
+                                <icons.shareIcon/>
                                 <span className="font-medium text-sm lg:text-base">Share the venue</span>
                             </div>
 
                             <div className="flex items-center gap-3">
-                                <ReportIcon/>
+                                <icons.reportIcon/>
                                 <span className="font-medium text-sm lg:text-base">Report the venue</span>
                             </div>
 
@@ -210,12 +195,12 @@ export default function SpecificVenue() {
 
                 <div className="xl:hidden flex flex-col border-t border-primary pt-6 pb-8">
                     <button className="flex items-center gap-3 pb-1 md:pb-2" type='button'>
-                        <ShareIcon/>
+                        <icons.shareIcon/>
                         <span className="font-medium text-sm">Share the venue</span>
                     </button>
 
                     <div className="flex items-center gap-3">
-                        <ReportIcon/>
+                        <icons.reportIcon/>
                         <span className="font-medium text-sm">Report the venue</span>
                     </div>
 
@@ -229,11 +214,11 @@ export default function SpecificVenue() {
         <div className='absolute inset-0 bg-black bg-opacity-40 items-center justify-center h-screen text-center hidden'>
             <div className='bg-white rounded px-4 md:p-16 flex items-center justify-center flex-col relative h-screen w-full md:h-fit md:w-fit'>
                 <button className='absolute top-6 right-6 bg-background rounded-full h-12 w-12 flex items-center justify-center' type='button'>
-                    <CloseIcon/>
+                    <icons.closeIcon/>
                 </button>
 
                 <div className='h-20 w-20 lg:h-24 lg:w-24 bg-customLightBlue flex items-center justify-center rounded-full mb-4 lg:mb-6'>
-                    <DeleteIconBig/>
+                    <icons.deleteIcon/>
                 </div>
 
                 <h2 className='md:text-lg lg:text-xl font-bold'>You are about to delete your venue</h2>

@@ -1,5 +1,5 @@
-import HeartIcon from "../SVG/HeartIcon"
-import SearchIcon from "../SVG/SearchIcon"
+import icons from "../utils/icons";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return(
@@ -11,17 +11,17 @@ export default function Header() {
 
                 <form action="search" className="relative w-3/4">
                     <input type="text" className="w-full border rounded-full border-secondary px-4 h-12 placeholder:text-secondary placeholder:text-sm" placeholder="Search through 124 venues..."/>
-                    <SearchIcon/>
+                    <icons.searchIcon/>
                 </form>
 
                 <nav className="flex gap-4 items-center justify-end">
                     <div className="flex mr-12">
                         <p className="px-8">Home</p>
-                        <p className="px-8">Contact</p>
+                        <Link to="/contact" className="px-8">Contact</Link>
                         <p className="px-8">Venues</p>
                     </div>
                     
-                    <HeartIcon/>
+                    <icons.heartIcon/>
                     <span>
                         <img src="germany.png" alt="" className="object-cover h-12 w-12 rounded-full" />
                     </span>

@@ -1,5 +1,5 @@
-import ArrowRight from "../SVG/ArrowRight"
-import ArrowUp from "../SVG/ArrowUp"
+import ArrowRight from "../components/SVG/ArrowRight"
+import ArrowUp from "../components/SVG/ArrowUp"
 
 export default function Footer() {
 
@@ -103,9 +103,9 @@ export default function Footer() {
                         <p className="hidden xl:flex">Your perfect getaway, just a click away!</p>
                         <div className="flex items-center gap-4 text-2xl">
                             <i title="Linkedin" className="fa-brands fa-linkedin hover:scale-110 hover:text-primary duration-200"/>
-                            <i title="Facebook" class="fa-brands fa-square-facebook hover:scale-110 hover:text-primary duration-200"/>
-                            <i title="Instagram" class="fa-brands fa-square-instagram hover:scale-110 hover:text-primary duration-200"/>
-                            <i title="Youtube" class="fa-brands fa-youtube hover:scale-110 hover:text-primary duration-200"/>
+                            <i title="Facebook" className="fa-brands fa-square-facebook hover:scale-110 hover:text-primary duration-200"/>
+                            <i title="Instagram" className="fa-brands fa-square-instagram hover:scale-110 hover:text-primary duration-200"/>
+                            <i title="Youtube" className="fa-brands fa-youtube hover:scale-110 hover:text-primary duration-200"/>
 
                             <button onClick={handlePageTop} type="button" className="ml-10 h-10 w-10 rounded bg-secondary flex items-center justify-center">
                                 <ArrowUp/>
