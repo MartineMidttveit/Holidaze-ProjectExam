@@ -32,6 +32,10 @@
     border-radius: 0 5px 5px 0;
 }
 
+.rounded-btm {
+    border-radius: 0rem 0rem 1.5rem 1.5rem;
+}
+
 .messenger-linear {
     background: linear-gradient(
     to top right,

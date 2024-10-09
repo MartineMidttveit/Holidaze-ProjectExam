@@ -1,7 +1,6 @@
 import React from 'react';
 import DeleteIcon from '../components/SVG/DeleteIcon';
 import RoundedXIcon from '../components/SVG/RoundedXIcon';
-import BedIcon from '../components/SVG/BedIcon';
 import ChevronRight from '../components/SVG/ChevronRight';
 import ChevronLeft from '../components/SVG/ChevronLeft';
 import EditIcon from '../components/SVG/EditIcon';
@@ -14,21 +13,28 @@ import CheckIcon from '../components/SVG/CheckIcon';
 import ReportIcon from '../components/SVG/ReportIcon';
 import CloseIcon from '../components/SVG/CloseIcon';
 import DeleteIconBig from '../components/SVG/DeleteIconBig';
+import GalleryIcon from '../components/SVG/GalleryIcon';
 
 import GuestsAmount from '../components/dropdowns/GuestAmount';
 
 export default function SpecificVenue() {
     return(
-        <main className="bg-background text-primary font-poppins relative">
-                <div className="relative flex items-center justify-center flex-col">
-                    <div className='flex items-center'>
-                        <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center" type='button'>
+        <main className="bg-background text-primary font-poppins relative pb-12">
+                <div className="relative flex items-center justify-center flex-col px-[5%] lg:px-[7%] 2xl:px-[15%]">
+                    <div className='flex items-center w-full relative'>
+
+                        <button type="button" className="absolute right-10 top-10 flex items-center justify-between gap-2 bg-background px-3 lg:px-6 py-2 rounded text-sm 2xl:text-base">
+                            <GalleryIcon/>
+                            Gallery
+                        </button>
+
+                        <button className="absolute left-10 rounded-full backdrop-blur bg-background bg-opacity-75 hover:bg-opacity-100 duration-300 h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center" type='button'>
                             <ChevronLeft/>
                         </button>
 
-                        <img src="lofoten.png" alt="" className="h-96 lg:h-screen-minus-40 object-cover rounded-3xl m-10" />
+                        <img src="lofoten.png" alt="" className="h-96 lg:h-screen-minus-25 object-cover rounded-btm w-full" />
 
-                        <button className="rounded-full bg-background h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center" type='button'>
+                        <button className="absolute right-10 rounded-full backdrop-blur bg-background bg-opacity-75 hover:bg-opacity-100 duration-300 h-8 w-8 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 flex items-center justify-center" type='button'>
                             <ChevronRight/>
                         </button>
                     </div>
@@ -239,8 +245,7 @@ export default function SpecificVenue() {
                     <button className='bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base' type='button'>Delete</button>
                 </div>
             </div>
-        </div>
-        
+        </div>        
 
         </main>
     )

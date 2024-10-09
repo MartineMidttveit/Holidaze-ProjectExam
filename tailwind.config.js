@@ -13,7 +13,7 @@ export default {
         darkBackground: '#DFDFDF',
       }, 
       height: {
-        'screen-minus-40': 'calc(100vh - 40rem)',
+        'screen-minus-25': 'calc(100vh - 25rem)',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

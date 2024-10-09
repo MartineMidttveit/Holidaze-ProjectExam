@@ -2,6 +2,14 @@ import ArrowRight from "../SVG/ArrowRight"
 import ArrowUp from "../SVG/ArrowUp"
 
 export default function Footer() {
+
+    const handlePageTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
+
     return(
         <footer className="flex flex-col bg-background text-primary border-t border-secondary w-full font-poppins">
             <div className="flex flex-col xl:flex-row justify-between px-[5%] lg:px-[7%] 2xl:px-[10%] pt-10 pb-12">
@@ -99,7 +107,7 @@ export default function Footer() {
                             <i title="Instagram" class="fa-brands fa-square-instagram hover:scale-110 hover:text-primary duration-200"/>
                             <i title="Youtube" class="fa-brands fa-youtube hover:scale-110 hover:text-primary duration-200"/>
 
-                            <button type="button" className="ml-10 h-10 w-10 rounded bg-secondary flex items-center justify-center">
+                            <button onClick={handlePageTop} type="button" className="ml-10 h-10 w-10 rounded bg-secondary flex items-center justify-center">
                                 <ArrowUp/>
                             </button>
                         </div>
