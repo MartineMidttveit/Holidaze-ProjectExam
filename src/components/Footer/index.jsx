@@ -1,4 +1,5 @@
 import ArrowRight from "../SVG/ArrowRight"
+import ArrowUp from "../SVG/ArrowUp"
 
 export default function Footer() {
     return(
@@ -92,11 +93,15 @@ export default function Footer() {
                     <p className="font-medium flex items-center gap-1"><span className="text-lg">©</span>Holidaze 2024</p>
 
                         <p className="hidden xl:flex">Your perfect getaway, just a click away!</p>
-                        <div className="flex gap-4 text-2xl">
-                            <i className="fa-brands fa-linkedin hover:scale-110 hover:text-primary duration-200"/>
-                            <i class="fa-brands fa-square-facebook hover:scale-110 hover:text-primary duration-200"/>
-                            <i class="fa-brands fa-square-instagram hover:scale-110 hover:text-primary duration-200"/>
-                            <i class="fa-brands fa-youtube hover:scale-110 hover:text-primary duration-200"/>
+                        <div className="flex items-center gap-4 text-2xl">
+                            <i title="Linkedin" className="fa-brands fa-linkedin hover:scale-110 hover:text-primary duration-200"/>
+                            <i title="Facebook" class="fa-brands fa-square-facebook hover:scale-110 hover:text-primary duration-200"/>
+                            <i title="Instagram" class="fa-brands fa-square-instagram hover:scale-110 hover:text-primary duration-200"/>
+                            <i title="Youtube" class="fa-brands fa-youtube hover:scale-110 hover:text-primary duration-200"/>
+
+                            <button type="button" className="ml-10 h-10 w-10 rounded bg-secondary flex items-center justify-center">
+                                <ArrowUp/>
+                            </button>
                         </div>
                 </div>
                 
