@@ -32,7 +32,7 @@ export default function FAQ() {
                                 <icons.chevronDown />
                             </button>
                             {activeIndex.booking === index && (
-                                <p className="pt-3 pb-1 lg:pt-5 lg:pb-2 leading-relaxed text-secondary text-sm md:text-base">{faq.answer}</p>
+                                <p className="pt-3 lg:pt-5 leading-relaxed text-secondary text-sm md:text-base pr-16">{faq.answer}</p>
                             )}
                         </div>
                     ))}
@@ -55,7 +55,7 @@ export default function FAQ() {
                                 <icons.chevronDown />
                             </button>
                             {activeIndex.payment === index && (
-                                <p className="pt-3 pb-1 lg:pt-5 lg:pb-2 leading-relaxed text-secondary text-sm md:text-base">{faq.answer}</p>
+                                <p className="pt-3 lg:pt-5 leading-relaxed text-secondary text-sm md:text-base pr-16">{faq.answer}</p>
                             )}
                         </div>
                     ))}
@@ -78,7 +78,7 @@ export default function FAQ() {
                                 <icons.chevronDown />
                             </button>
                             {activeIndex.support === index && (
-                                <p className="pt-3 pb-1 lg:pt-5 lg:pb-2 leading-relaxed text-secondary text-sm md:text-base">{faq.answer}</p>
+                                <p className="pt-3 lg:pt-5 leading-relaxed text-secondary text-sm md:text-base pr-16">{faq.answer}</p>
                             )}
                         </div>
                     ))}
@@ -101,7 +101,7 @@ export default function FAQ() {
                                 <icons.chevronDown />
                             </button>
                             {activeIndex.policies === index && (
-                                <p className="pt-3 pb-1 lg:pt-5 lg:pb-2 leading-relaxed text-secondary text-sm md:text-base">{faq.answer}</p>
+                                <p className="pt-3 lg:pt-5 leading-relaxed text-secondary text-sm md:text-base pr-16">{faq.answer}</p>
                             )}
                         </div>
                     ))}
