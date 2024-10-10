@@ -28,8 +28,8 @@ export default function FAQ() {
                                 className="flex items-center justify-between cursor-pointer w-full"
                                 onClick={() => toggleFAQ('booking', index)}
                             >
-                                <span className="font-medium text-left text-sm md:text-base">{faq.question}</span>
-                                <icons.chevronDown />
+                                <span className="font-medium text-left text-sm md:text-base w-full leading-relaxed">{faq.question}</span>
+                                <span className="w-[3rem] flex items-center justify-center"><icons.chevronDown /></span>
                             </button>
                             {activeIndex.booking === index && (
                                 <p className="pt-3 lg:pt-5 leading-relaxed text-secondary text-sm md:text-base pr-16">{faq.answer}</p>
@@ -51,8 +51,8 @@ export default function FAQ() {
                                 className="flex items-center justify-between cursor-pointer w-full"
                                 onClick={() => toggleFAQ('payment', index)}
                             >
-                                <span className="font-medium text-left text-sm md:text-base">{faq.question}</span>
-                                <icons.chevronDown />
+                                <span className="font-medium text-left text-sm md:text-base w-full leading-relaxed">{faq.question}</span>
+                                <span className="w-[3rem] flex items-center justify-center"><icons.chevronDown /></span>
                             </button>
                             {activeIndex.payment === index && (
                                 <p className="pt-3 lg:pt-5 leading-relaxed text-secondary text-sm md:text-base pr-16">{faq.answer}</p>
@@ -74,8 +74,8 @@ export default function FAQ() {
                                 className="flex items-center justify-between cursor-pointer w-full"
                                 onClick={() => toggleFAQ('support', index)}
                             >
-                                <span className="font-medium text-left text-sm md:text-base">{faq.question}</span>
-                                <icons.chevronDown />
+                                <span className="font-medium text-left text-sm md:text-base w-full leading-relaxed">{faq.question}</span>
+                                <span className="w-[3rem] flex items-center justify-center"><icons.chevronDown /></span>
                             </button>
                             {activeIndex.support === index && (
                                 <p className="pt-3 lg:pt-5 leading-relaxed text-secondary text-sm md:text-base pr-16">{faq.answer}</p>
@@ -97,8 +97,8 @@ export default function FAQ() {
                                 className="flex items-center justify-between cursor-pointer w-full"
                                 onClick={() => toggleFAQ('policies', index)}
                             >
-                                <span className="font-medium text-left text-sm md:text-base">{faq.question}</span>
-                                <icons.chevronDown />
+                                <span className="font-medium text-left text-sm md:text-base w-full leading-relaxed">{faq.question}</span>
+                                <span className="w-[3rem] flex items-center justify-center"><icons.chevronDown /></span>
                             </button>
                             {activeIndex.policies === index && (
                                 <p className="pt-3 lg:pt-5 leading-relaxed text-secondary text-sm md:text-base pr-16">{faq.answer}</p>
