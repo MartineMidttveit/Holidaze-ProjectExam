@@ -152,12 +152,12 @@ export default function SpecificVenue() {
 
                             <form action="" className="flex flex-col md:flex-row w-full gap-4">
                                 <div className="flex flex-col w-full">
-                                    <label for="checkIn" className="pb-2 lg:pb-3 font-medium md:font-normal text-sm md:text-base">Check in:</label>
+                                    <label htmlFor="checkIn" className="pb-2 lg:pb-3 font-medium md:font-normal text-sm md:text-base">Check in:</label>
                                     <input type="date" id="checkIn" name="checkIn" className="border border-secondary rounded py-3 px-4 h-12 xl:h-14 text-sm md:text-base"/>
                                 </div>
 
                                 <div className="flex flex-col w-full">
-                                    <label for="checkOut" className="pb-2 lg:pb-3 font-medium md:font-normal text-sm md:text-base">Check out:</label>
+                                    <label htmlFor="checkOut" className="pb-2 lg:pb-3 font-medium md:font-normal text-sm md:text-base">Check out:</label>
                                     <input type="date" id="checkOut" name="checkOut" className="border border-secondary rounded py-3 px-4 h-12 xl:h-14 text-sm md:text-base"/>
                                 </div>
                             </form>
@@ -218,7 +218,7 @@ export default function SpecificVenue() {
                 </button>
 
                 <div className='h-20 w-20 lg:h-24 lg:w-24 bg-customLightBlue flex items-center justify-center rounded-full mb-4 lg:mb-6'>
-                    <icons.deleteIcon/>
+                    <icons.deleteIconBig/>
                 </div>
 
                 <h2 className='md:text-lg lg:text-xl font-bold'>You are about to delete your venue</h2>
@@ -229,6 +229,38 @@ export default function SpecificVenue() {
                     <button className='border border-primary h-12 2xl:h-14 py-4 font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base hover:bg-customLightBlue hover:border-customLightBlue duration-300' type='button'>Cancel</button>
                     <button className='bg-contrast h-12 2xl:h-14 py-4 text-white font-medium rounded px-4 md:px-6 2xl:px-8 flex items-center text-sm md:text-base' type='button'>Delete</button>
                 </div>
+            </div>
+        </div>        
+
+{/* LOGIN MODAL */}
+{/* SET IT TO FLEX WHEN CLICKING ON THE DELETE-BUTTON.  */}
+<div className='absolute inset-0 bg-black bg-opacity-40 items-center justify-center h-screen hidden'>
+            <div className='bg-white rounded px-4 md:p-16 flex justify-center flex-col relative h-screen md:h-fit md:w-fit'>
+                <button className='absolute top-6 right-6 bg-background rounded-full h-12 w-12 flex items-center justify-center' type='button'>
+                    <icons.closeIcon/>
+                </button>
+
+                <h2 className='md:text-lg lg:text-xl font-bold'>Log in:</h2>
+                
+                <form action="" className='flex flex-col gap-4 py-6'>
+                    <div className='flex flex-col'>
+                        <label htmlFor="userEmail" className='font-medium text-secondary pb-3'>Email:</label>
+                        <input type="text" id='userEmail' name='userEmail' className='h-12 border border-secondary rounded px-3' />
+                    </div>
+                    <div className='flex flex-col relative'>
+                        <div className='flex justify-between items-end pb-3'>
+                            <label htmlFor="userPassword" className='font-medium text-secondary'>Password:</label>
+                            <p className='text-sm font-semibold text-secondary'>Forgot password?</p>
+                        </div>
+                        
+                        <input type="password" id='userPassword' name='userPassword' className='h-12 border border-secondary rounded px-3' />
+                        <icons.eyeIcon/>
+                    </div>
+
+                    <button className='w-full bg-contrast h-12 text-white font-medium rounded mt-2' type='submit'>Log in</button>
+                </form>
+
+                <p>Not registered? <span className='underline text-contrast tracking-wide font-medium'>Create new user.</span></p>
             </div>
         </div>        
 

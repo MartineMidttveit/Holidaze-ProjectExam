@@ -17,6 +17,7 @@ import GalleryIcon from '../components/SVG/GalleryIcon';
 import SearchIcon from "../components/SVG/SearchIcon";
 import MailIcon from '../components/SVG/MailIcon';
 import PhoneIcon from '../components/SVG/PhoneIcon';
+import EyeIcon from '../components/SVG/EyeIcon';
 
 const icons = {
   deleteIcon: DeleteIcon,
@@ -38,6 +39,7 @@ const icons = {
   mailIcon: MailIcon,
   phoneIcon: PhoneIcon,
   chevronDown: ChevronDown,
+  eyeIcon: EyeIcon,
 };
 
 export default icons;

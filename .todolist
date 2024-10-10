@@ -40,3 +40,5 @@ IF THE USER OWNS THE VENUE:
 * Make a reusable modal component 
 
 * Make the arrow-up-button in the footer take you to the top of the page.
+
+* On the login modal, make sure that when the user clicks on the eye, the password is written in letters (from type password -> text). 

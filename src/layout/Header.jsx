@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 export default function Header() {
     return (
         <header className="font-poppins text-primary">
-            <div className="bg-contrast h-10 px-[5%] lg:px-[7%] 2xl:px-[15%] flex items-center">
-                Hei
-            </div>
-
             <div className="grid grid-cols-3 justify-between items-center bg-white h-20 px-[5%] lg:px-[7%] 2xl:px-[15%] shadow-lg z-10 relative">
                 <Link to="/" className="text-2xl font-bold">Holidaze</Link>
 
