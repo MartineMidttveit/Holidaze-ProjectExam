@@ -128,15 +128,18 @@ export default function SpecificVenue() {
             />
 
             <div className="flex flex-col gap-y-3 my-6 2xl:my-8">
-              <p className="text-sm md:text-base leading-relaxed">
-                {data.description}
-              </p>
+                <h2 className="font-bold md:text-lg pb-4">
+                    Description:
+                </h2>
+                <p className="text-sm md:text-base leading-relaxed">
+                    {data.description}
+                </p>
             </div>
 
             {/* <!--Facilities--> */}
 
             <div className="flex flex-col pb-6 2xl:pb-8">
-              <h2 className="font-bold md:text-lg 2xl:text-xl pb-4">
+              <h2 className="font-bold md:text-lg pb-4">
                 Facilities:
               </h2>
 
