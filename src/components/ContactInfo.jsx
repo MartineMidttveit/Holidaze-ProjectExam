@@ -2,7 +2,7 @@ import icons from "../utils/icons";
 
 export default function ContactInfo() {
   return (
-    <section className="md:w-3/4 lg:w-2/3 xl:w-1/2 px-[5%] lg:px-0 xl:pl-[7%] xl:pr-[5%] 2xl:pl-[15%] 2xl:pr-[10%] pt-16 pb-8 md:py-16 lg:py-16 xl:py-0">
+    <section className="md:w-3/4 lg:w-2/3 xl:w-1/2 px-[5%] lg:px-0 xl:pl-[7%] xl:pr-[5%] 2xl:pl-[15%] 2xl:pr-[10%] pt-8 lg:pt-16 pb-8 md:py-16 lg:py-16 xl:py-0">
       <h2 className="text-contrast font-bold tracking-wider text-sm md:text-base">CONTACT US</h2>
       <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold pt-2 md:pt-4 lg:pt-4">Get in touch</h1>
 
@@ -44,7 +44,7 @@ export default function ContactInfo() {
             <i title="Linkedin" className="fa-brands fa-linkedin text-2xl" />
           </span>
 
-          <span className="bg-background h-12 w-12 flex items-centerr justify-center rounded-lg hover:scale-110 duration-200">
+          <span className="bg-background h-12 w-12 flex items-center justify-center rounded-lg hover:scale-110 duration-200">
             <i title="Facebook" className="fa-brands fa-square-facebook text-2xl" />
           </span>
 

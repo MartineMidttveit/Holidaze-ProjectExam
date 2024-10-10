@@ -9,7 +9,6 @@ IF THE USER OWNS THE VENUE:
 * Get the images from the API 
 * Get the location from the API 
 * Get the amount of guests from the API 
-* Get the amount of bedrooms from the API
 * Get the rating from the API
 * Get the description from the API 
 

@@ -13,8 +13,8 @@ export default function FAQ() {
     };
 
     return (
-        <div className="bg-customLightBlue grid grid-cols-1 lg:grid-cols-2 gap-6 py-20 px-[5%] lg:px-[7%] 2xl:px-[15%]">
-            <h2 className="text-5xl font-bold pb-6 lg:col-span-2">FAQs</h2>
+        <div className="bg-customLightBlue grid grid-cols-1 lg:grid-cols-2 gap-6 py-10 lg:py-20 px-[5%] lg:px-[7%] 2xl:px-[15%]">
+            <h2 className="text-3xl lg:text-5xl font-bold lg:pb-6 lg:col-span-2">FAQs</h2>
 
             {/* Booking & Reservations */}
             <div className="bg-white rounded-lg p-8 lg:p-10 2xl:p-12">
