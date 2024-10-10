@@ -44,7 +44,7 @@ export default function ContactInfo() {
             <i title="Linkedin" className="fa-brands fa-linkedin text-2xl" />
           </span>
 
-          <span className="bg-background h-12 w-12 flex items-center justify-center rounded-lg hover:scale-110 duration-200">
+          <span className="bg-background h-12 w-12 flex items-centerr justify-center rounded-lg hover:scale-110 duration-200">
             <i title="Facebook" className="fa-brands fa-square-facebook text-2xl" />
           </span>
 
