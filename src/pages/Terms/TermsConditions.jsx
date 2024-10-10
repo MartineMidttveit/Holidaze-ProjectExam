@@ -1,7 +1,6 @@
-export default function Terms() {
+export default function TermsConditions () {
     return (
-        <div className="leading-relaxed pt-8 md:pt-10 2xl:pt-12 text-sm md:text-base">
-            <div className="px-[5%] md:px-[15%] lg:px-[25%] xl:px-[30%] 2xl:px-[36%] pb-8 md:pb-10 2xl:pb-12">
+        <div className="px-[5%] md:px-[15%] lg:px-[25%] xl:px-[30%] 2xl:px-[36%] pb-8 md:pb-10 2xl:pb-12">
                 <p className="text-contrast font-bold tracking-widest text-sm md:text-base">LEGAL</p>
                 <h1 className="text-xl xl:text-2xl font-bold pt-1">Terms & Conditions</h1>
                 <p className="py-2 lg:py-4">Welcome to Holidaze! By accessing or using our website, you agree to comply with and be bound by the following terms and conditions. Please review them carefully.</p>
@@ -38,30 +37,5 @@ export default function Terms() {
                     <li>Refunds are subject to the cancellation policy terms and may not be available for late cancellations or no-shows.</li>
                 </ul>
             </div>
-             
-            <div className="bg-background">
-                <div className="px-[5%] md:px-[15%] lg:px-[25%] xl:px-[30%] 2xl:px-[36%] py-10 2xl:py-12">
-                    <h2 className="text-xl xl:text-2xl font-bold pb-2">Cookie Policy</h2>
-                    <ul className="list-disc pl-5 font-normal py-4 flex flex-col gap-2 pt-2">
-                        <li>Holidaze uses cookies to enhance the user experience and gather data to improve our services.</li>
-                        <li>By using our site, you consent to the use of cookies in accordance with this policy.</li>
-                        <li>We use cookies to remember your preferences, analyze traffic, and understand usage patterns.</li>
-                        <li>You can disable cookies through your browser settings, but doing so may affect your experience on the site.</li>
-                    </ul>
-                </div>
-            </div>
-                            
-            <div className="bg-customLightBlue py-10 2xl:py-12">
-                <div className="px-[5%] md:px-[15%] lg:px-[25%] xl:px-[30%] 2xl:px-[36%]">
-                    <h2 className="text-xl xl:text-2xl font-bold pb-2">Privacy Policy</h2>
-                    <ul className="list-disc pl-5 font-normal py-4 flex flex-col gap-2 pt-2">
-                        <li>We collect personal information such as your name, email, and payment details when you use our services.</li>
-                        <li>This information is used to process bookings, manage your account, and communicate with you.</li>
-                        <li>Holidaze is committed to protecting your personal information and complies with data protection regulations.</li>
-                        <li>We do not share your personal information with third parties, except as necessary to fulfill services (e.g., sharing your details with hosts) or as required by law.</li>
-                    </ul>
-                </div> 
-            </div>          
-        </div>
-    );
+    )
 }

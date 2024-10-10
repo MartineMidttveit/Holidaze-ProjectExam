@@ -60,7 +60,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex flex-col gap-2 xl:w-1/4">
-                    <h4 className="font-medium">Legal</h4>
+                    <Link to="/terms" className="font-medium">Legal</Link>
                     <Link to="/terms" className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
                         Terms & Conditions
                         <ArrowRight/>
@@ -72,8 +72,8 @@ export default function Footer() {
                     </Link>
 
                     <Link to="/terms" className="flex gap-2 items-center text-secondary group hover:text-primary duration-300">
-                        Cookie policy
-                        <ArrowRight/>
+                        Terms & Conditions
+                        <ArrowRight />
                     </Link>
                 </div>
 
