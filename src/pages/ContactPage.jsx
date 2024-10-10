@@ -10,5 +10,6 @@ export default function ContactPage() {
                 <ContactForm/>
             </div>
             <FAQ/>
+            <img src="contact.png" className="w-full object-cover h-[35rem] pt-6 bg-customLightBlue" alt="" />
         </div>   
     ) } 

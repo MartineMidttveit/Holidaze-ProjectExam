@@ -1,6 +1,6 @@
 export default function ContactForm() {
     return (
-      <section className="bg-background w-full xl:w-1/2 flex justify-end px-[5%] lg:px-0 xl:pl-[5%] xl:pr-[7%] 2xl:pl-0 2xl:pr-[15%] py-12 md:py-16 lg:py-20 2xl:py-36">
+      <section className="bg-background w-full xl:w-1/2 flex justify-end px-[5%] lg:px-0 xl:pl-[5%] xl:pr-[7%] 2xl:pl-0 2xl:pr-[15%] py-12 md:py-16 lg:py-20 2xl:py-28">
         <div className="w-full md:w-3/4 lg:w-2/3 xl:w-full 2xl:ml-[15%] bg-white mx-auto rounded-lg">
           <h1 className="text-xl 2xl:text-2xl pt-10 px-8 md:px-10 lg:px-12 font-bold">Contact</h1>
   
