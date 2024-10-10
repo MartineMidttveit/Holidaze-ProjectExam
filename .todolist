@@ -5,17 +5,7 @@ IF THE USER OWNS THE VENUE:
 
 * When clicking on "add to favorites", the venue is saved to the persons favorites. The heart also turns red. 
 
-* Get the title from the API
-* Get the images from the API 
 * Get the location from the API 
-* Get the amount of guests from the API 
-* Get the rating from the API
-* Get the description from the API 
-
-* Get the available facilities from the API
-* Get the NOT available facilities from the API 
-
-* Change last updated to the correct date and time. 
 
 * Fetch who the owner of the venue is from the API. 
 * Fetch the owners image from the API. 
