@@ -5,6 +5,8 @@ import { useQuery } from '@tanstack/react-query'
 import getVenue from '../api/requests/getVenue'
 import formatTime from '../utils/formatTime'
 
+import { Link } from "react-router-dom";
+
 export default function SpecificVenue() {
   const { data, isLoading, error } = useQuery({
     queryKey: ['venues'],
@@ -319,7 +321,7 @@ export default function SpecificVenue() {
               </p>
               <p className="text-center text-secondary text-sm 2xl:text-base">
                 For more information regarding booking, read our{' '}
-                <span className="underline">terms and conditions.</span>
+                <Link to="/terms" className="underline">terms and conditions.</Link>
               </p>
             </div>
           </div>
