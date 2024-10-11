@@ -36,7 +36,7 @@ export default function ContactForm() {
                 Phone number
               </label>
               <input
-                type="tel"
+                type="number"
                 id="phone"
                 name="phone"
                 className="mt-1 w-full px-3 py-2 border border-secondary rounded text-sm md:text-base h-12"
