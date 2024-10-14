@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 export default function Register() {
     return(
-        <div className="flex px-[5%] lg:px-[7%] 2xl:px-[20%] w-full justify-between gap-[5%] py-[2.5%]">
+        <div className="flex items-center px-[5%] lg:px-[7%] 2xl:px-[20%] w-full justify-between gap-[5%] py-[2.5%]">
             {/* RIGHT SIDE */}
             <div className="w-1/2 pr-[5%]">
-                <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold pt-2 md:pt-4 lg:pt-4 pb-6">Register</h1>
+                <h1 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold pt-2 md:pt-4 lg:pt-4 pb-10">Register</h1>
 
                 <h2 className="text-sm font-medium text-secondary">Account type</h2>
-                <div className="grid grid-cols-2 w-full gap-3 mt-2">
+                <div className="grid grid-cols-2 w-full gap-3 mt-3">
                     <button type="button" className="border border-secondary p-8 rounded hover:bg-background duration-200 text-sm font-medium text-secondary">Venue Manager</button>
                     <button type="button" className="border border-secondary p-8 rounded hover:bg-background duration-200 text-sm font-medium text-secondary">Guest</button>
                 </div>
@@ -22,7 +22,7 @@ export default function Register() {
                             type="text"
                             id="name"
                             name="name"
-                            className="mt-1 w-full px-3 py-2 border border-secondary rounded text-sm md:text-base h-12"
+                            className="mt-2 w-full px-3 py-2 border border-secondary rounded text-sm md:text-base h-12"
                             required
                         />
                         </div>
@@ -35,7 +35,7 @@ export default function Register() {
                                 type="email"
                                 id="email"
                                 name="email"
-                                className="mt-1 w-full px-3 py-2 border border-secondary rounded text-sm md:text-base h-12"
+                                className="mt-2 w-full px-3 py-2 border border-secondary rounded text-sm md:text-base h-12"
                                 required
                             />
                         </div>
@@ -48,7 +48,7 @@ export default function Register() {
                                 type="password"
                                 id="password"
                                 name="password"
-                                className="mt-1 w-full px-3 py-2 border border-secondary rounded text-sm md:text-base h-12"
+                                className="mt-2 w-full px-3 py-2 border border-secondary rounded text-sm md:text-base h-12"
                                 required
                             />
                         </div>
@@ -61,13 +61,13 @@ export default function Register() {
                                 type="repeatPassword"
                                 id="repeatPassword"
                                 name="repeatPassword"
-                                className="mt-1 w-full px-3 py-2 border border-secondary rounded text-sm md:text-base h-12"
+                                className="mt-2 w-full px-3 py-2 border border-secondary rounded text-sm md:text-base h-12"
                                 required
                             />
                         </div>
                         <div>
 
-                        <div className="flex flex-col space-y-4 pb-6">
+                        <div className="flex flex-col space-y-4 pt-2 pb-8">
                             <div className="flex gap-4 items-center">
                                 <input type="checkbox" name="rememberMe" className="h-6 w-6"/>
                                 <label htmlFor="rememberMe">Remember me</label>
@@ -83,7 +83,7 @@ export default function Register() {
                             Register
                         </button>
 
-                        <p className="text-secondary mt-5 flex gap-1">Already have an account? 
+                        <p className="text-secondary pt-6 flex gap-1">Already have an account? 
                             <button className="font-medium underline" type="button">Log in here.</button>
                         </p>
                     </div>
