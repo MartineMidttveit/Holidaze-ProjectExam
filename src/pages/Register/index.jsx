@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 export default function Register() {
     return(
-        <div className="flex items-center px-[5%] lg:px-[7%] 2xl:px-[20%] w-full justify-between gap-[5%] py-[2.5%]">
+        <div className="flex items-center px-[5%] lg:px-[7%] 2xl:px-[20%] w-full justify-between gap-[5%] py-[2.5%] bg-background">
             {/* RIGHT SIDE */}
             <div className="w-1/2 pr-[5%]">
-                <h1 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold pt-2 md:pt-4 lg:pt-4 pb-10">Register</h1>
+                <h1 className="md:text-2xl xl:text-3xl 2xl:text-4xl font-bold pt-2 md:pt-4 lg:pt-4 pb-10">Register</h1>
 
                 <h2 className="text-sm font-medium text-secondary">Account type</h2>
                 <div className="grid grid-cols-2 w-full gap-3 mt-3">
-                    <button type="button" className="border border-secondary p-8 rounded hover:bg-background duration-200 text-sm font-medium text-secondary">Venue Manager</button>
-                    <button type="button" className="border border-secondary p-8 rounded hover:bg-background duration-200 text-sm font-medium text-secondary">Guest</button>
+                    <button type="button" className="border border-secondary p-8 bg-white rounded hover:bg-background duration-200 text-sm font-medium text-secondary">Venue Manager</button>
+                    <button type="button" className="border border-secondary p-8  bg-white rounded hover:bg-background duration-200 text-sm font-medium text-secondary">Guest</button>
                 </div>
 
                 <form className="pt-4 pb-12 space-y-3 lg:space-y-4 xl:space-y-6">

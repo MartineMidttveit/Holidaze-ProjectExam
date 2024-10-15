@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query'
 import getVenue from '../api/requests/getVenue'
 import formatTime from '../utils/formatTime'
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export default function SpecificVenue() {
   const { data, isLoading, error } = useQuery({
@@ -130,20 +130,16 @@ export default function SpecificVenue() {
             />
 
             <div className="flex flex-col gap-y-3 my-6 2xl:my-8">
-                <h2 className="font-bold md:text-lg pb-4">
-                    Description:
-                </h2>
-                <p className="text-sm md:text-base leading-relaxed">
-                    {data.description}
-                </p>
+              <h2 className="font-bold md:text-lg pb-4">Description:</h2>
+              <p className="text-sm md:text-base leading-relaxed">
+                {data.description}
+              </p>
             </div>
 
             {/* <!--Facilities--> */}
 
             <div className="flex flex-col pb-6 2xl:pb-8">
-              <h2 className="font-bold md:text-lg pb-4">
-                Facilities:
-              </h2>
+              <h2 className="font-bold md:text-lg pb-4">Facilities:</h2>
 
               <div className="flex flex-col gap-1 xl:gap-2 text-sm md:text-base">
                 <div className="flex items-center gap-3">
@@ -205,8 +201,7 @@ export default function SpecificVenue() {
               </p>
 
               <p className="text-secondary pt-1 text-sm lg:text-base">
-                Created: <span>{createdDate}</span>,{' '}
-                <span>{createdTime}</span>
+                Created: <span>{createdDate}</span>, <span>{createdTime}</span>
               </p>
             </div>
           </section>
@@ -321,7 +316,9 @@ export default function SpecificVenue() {
               </p>
               <p className="text-center text-secondary text-sm 2xl:text-base">
                 For more information regarding booking, read our{' '}
-                <Link to="/terms" className="underline">terms and conditions.</Link>
+                <Link to="/terms" className="underline">
+                  terms and conditions.
+                </Link>
               </p>
             </div>
           </div>

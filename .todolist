@@ -28,3 +28,5 @@ IF THE USER OWNS THE VENUE:
 * Make a reusable modal component 
 
 * On the login modal, make sure that when the user clicks on the eye, the password is written in letters (from type password -> text). 
+
+* Max-width 3000px or something around that. 
